@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+    <head>
+        <title>Startseite</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-widht,initial-scale=1">
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+<!-- edit main font family -->
+<style>
+    body{
+        font-family: 'Playfair Display', serif;
+    }
+    
+    body{
+    text-align: center;
+    font-weight: 100;
+    }
+
+</style>   
+       
+</head>
+
+<body>
+
+
+    <div class="Test">
+        <div id= "main">
+            <section id="Hauptmenü"> <div>
+                    <div class="navbar">
+            
+                        <nav class="nav1">
+                            <a href="Index.html">Startseite</a>
+                            <a href="Ambiente.html">Location</a>
+                            <a href="Ablauf.html">Ablauf</a>
+                            <span class="logo">J&J</span>
+                            <a href="Hochzeits-ABC.html">Hochzeits-ABC</a>
+                            <a href="Bilder.html">Trauzeugen</a>
+                            <a href="Rückmeldung.html">Rückmeldung</a>
+                        </nav>
+                    </div>
+                    <h1>Noch...</h1>
+                    <div id="clockdiv">
+                    <div>
+                        <span class="days" id="day"></span>
+                        <div class="smalltext">Tage</div>
+                    </div>
+                    <div>
+                        <span class="hours" id="hour"></span>
+                        <div class="smalltext">Stunden</div>
+                    </div>
+                    <div>
+                        <span class="minutes" id="minute"></span>
+                        <div class="smalltext">Minuten</div>
+                    </div>
+                    <div>
+                        <span class="seconds" id="second"></span>
+                        <div class="smalltext">Sekunden</div>
+                    </div>
+                    </div>
+                    <p id="demo"></p>
+                    <script>
+                    var deadline = new Date("Sep 24, 2022 14:00:00").getTime();
+                    var x = setInterval(function() {
+                    var now = new Date().getTime();
+                    var t = deadline - now;
+                    var days = Math.floor(t / (1000 * 60 * 60 * 24));
+                    var hours = Math.floor((t%(1000 * 60 * 60 * 24))/(1000 * 60 * 60));
+                    var minutes = Math.floor((t % (1000 * 60 * 60)) / (1000 * 60));
+                    var seconds = Math.floor((t % (1000 * 60)) / 1000);
+                    document.getElementById("day").innerHTML =days ;
+                    document.getElementById("hour").innerHTML =hours;
+                    document.getElementById("minute").innerHTML = minutes; 
+                    document.getElementById("second").innerHTML =seconds; 
+                        if (t < 0) {
+                            clearInterval(x);
+                            document.getElementById("demo").innerHTML = "TIME UP";
+                            document.getElementById("day").innerHTML ='0';
+                            document.getElementById("hour").innerHTML ='0';
+                            document.getElementById("minute").innerHTML ='0' ; 
+                            document.getElementById("second").innerHTML = '0'; 
+                        }
+                    }, 1000);
+                    </script>
+                    <h1><div class=""></div>bis zum JA</h1> 
+                    
+
+                <div id="Info">
+                    <br> Herzlich Willkommen auf unserer Homepage.
+                    <br> Wir möchten euch hier alle wichtigen Informationen 
+                    <br> zu unserer Hochzeit am 24.09.2022 
+                    <br> in der alten Schafsscheune in 
+                    <br> Frauental (97993 Creglingen) zusammenstellen.
+                    <br> Wir freuen uns auf ein schönes Wochenende 
+                    <br> und einen unvergesslichen Tag mit Euch!
+                </div>
+            </div>
+        </div>
+    <div>
+</body>
+
+<footer>
+    <div id="Copyright">Copyright by Silas Gorke</div> 
+    <div id="Contact">Kontakt: sunktimes@ik.me</div> 
+</footer>
+</html>

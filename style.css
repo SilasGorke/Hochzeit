@@ -1,0 +1,221 @@
+footer{
+    padding: 10px;
+    text-align: center;
+    background-color: azure;
+    padding-bottom: 0px;
+}
+body{
+    background-image: url(Bild.jpg) ;
+    margin: 0px;
+    background-size: 100%;
+    background-position-y: top;
+}
+.logo{
+    font-size: 50px;
+    margin-left: 110px;
+    margin-right: 40px;
+    text-decoration: underline;
+}
+#Copyright{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#Contact{
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#image img{
+    width: 40%;
+    margin-top: 10px;
+    margin-left: 30%;
+    
+}
+.link{
+    cursor: pointer;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#mail{
+    height: 40vh;
+    width: 100%;
+    background-color: beige;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.container{
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 20px #000010;
+    background-color: rgba(255, 229, 196, 0.889);
+    border-radius: 9px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+.form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+.form-group input,
+.form-group textarea{
+    width: 100%;
+    padding: 5px;
+    font-size: 18px;
+    border: 1px solid rgba(128, 128, 128, 0.199);
+    margin-top: 5px;
+}
+textarea{
+    resize: vertical;
+}
+button[type="submit"]{
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 8px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: .3s ease background-color;
+}
+button[type="submit"]:hover{
+    background-color: antiquewhite;
+}
+#status{
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 9px;
+}
+#status.succes{
+    background-color: aquamarine;
+    animation: status 4s ease forwards;
+}
+#status.error{
+    background-color: red;
+    color: white;
+    animation: status 4s ease forwards;
+}
+@keyframes status{
+    0%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    90%{
+        opacity: 1;
+        pointer-events: all;
+    }
+    100%{
+        opacity: 0;
+        pointer-events: none;
+    }
+}
+#come{
+    font-size: 10px;
+}
+a{
+    color: firebrick;
+    text-decoration: none;
+    margin-left: 70px;
+
+}
+a:hover{
+    text-decoration: underline;
+    font-size: larger;
+}
+.navbar{
+    align-items: center;
+    margin-top: 50px;
+    padding-bottom: 20px;
+    position: sticky;
+    top: 0;
+    background-color: antiquewhite;
+    display: flex;
+    justify-content: center;
+}
+#map{
+    margin-top: 24px;
+    margin-bottom: 24px;
+    text-align: center;
+    width: auto;
+}
+.timetable{
+    text-align: center;
+}
+#Headline-Ambiente{
+    text-align: center;
+}
+#Info{
+    text-align: center;
+    margin-bottom: 200px;
+    margin-top: 170px;
+    font-size: 40px;
+}
+.Test{
+    background-color: rgba(255, 255, 255, 0.675);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+#Bildergalerie{
+    text-align: center;
+    margin-top: 30px;
+}
+#Hochzeits-ABC{
+    text-align: center;
+
+}
+.Word{
+    font-size: 30px;
+    color: #24242c;
+}
+.ABC{
+    display: flex;
+    justify-content: center;
+    font-size: 45px;
+    padding-left: 40px;
+    color: #000000;
+}
+#WHEU{
+    margin-top: 10px;
+}
+h1{
+color: rgb(169, 118, 52);
+font-weight: 100;
+font-size: 40px;
+margin: 40px 0px 20px;
+}
+#clockdiv{
+    font-family: sans-serif;
+    color: #fff;
+    display: inline-block;
+    font-weight: 100;
+    text-align: center;
+    font-size: 30px;
+}
+#clockdiv > div{
+    padding: 10px;
+    border-radius: 3px;
+    background: rgb(230, 178, 100);
+    display: inline-block;
+}
+#clockdiv div > span{
+    padding: 15px;
+    border-radius: 3px;
+    background: rgb(187, 135, 73);
+    display: inline-block;
+}
+.smalltext{
+    padding-top: 5px;
+    font-size: 16px;
+}
